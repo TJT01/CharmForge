@@ -11,5 +11,11 @@
   "result": {
     "item": "minecraft:soul_torch",
     "count": 2
-  }
+  },
+  "conditions": [
+    {
+      "type": "charm:extra_recipe_enabled",
+      "recipe": "soul_torch"
+    }
+  ]
 }

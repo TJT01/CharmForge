@@ -19,5 +19,11 @@
   "result": {
     "item": "minecraft:trident",
     "count": 1
-  }
+  },
+  "conditions": [
+    {
+      "type": "charm:extra_recipe_enabled",
+      "recipe": "trident"
+    }
+  ]
 }

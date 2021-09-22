@@ -13,6 +13,7 @@ import svenhjol.charm.CharmMixinConfigPlugin;
 import svenhjol.charm.base.CharmLoader;
 import svenhjol.charm.base.CharmModule;
 import svenhjol.charm.base.helper.StringHelper;
+import svenhjol.charm.base.loader.condition.ExtraRecipeEnabledCondition;
 import svenhjol.charm.base.loader.condition.ModuleEnabledCondition;
 import svenhjol.charm.module.Quark;
 
@@ -42,6 +43,7 @@ public class ModuleHandler {
         CONFIG_HANDLER = new ConfigHandler();
         BiomeHandler.init();
         CraftingHelper.register(new ModuleEnabledCondition.Serializer());
+        CraftingHelper.register(new ExtraRecipeEnabledCondition.Serializer());
     }
 
     public void addLoader(CharmLoader loader) {
