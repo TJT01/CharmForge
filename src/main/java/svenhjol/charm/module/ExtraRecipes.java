@@ -22,5 +22,10 @@ public class ExtraRecipes extends CharmModule {
     @Config(name = "Soul Torch", description = "If true, adds a recipe for Soul Torches using soul sand/soul soil and sticks.")
     public static boolean useSoulTorch = true;
 
+    @Config(name = "Bread", description = "If true, adds a shapeless recipe for Bread.")
+    public static boolean useShapelessBread = true;
+
+    @Config(name = "Paper", description = "If true, adds a shapeless recipe for Paper.")
+    public static boolean useShapelessPaper = true;
 }
 

@@ -48,6 +48,12 @@ public class ExtraRecipeEnabledCondition implements ICondition {
             case SOUL_TORCH:
                 isRecipeEnabled = ExtraRecipes.useSoulTorch;
                 break;
+            case BREAD:
+                isRecipeEnabled = ExtraRecipes.useShapelessBread;
+                break;
+            case PAPER:
+                isRecipeEnabled = ExtraRecipes.useShapelessPaper;
+                break;
             default:
                 throw new IllegalStateException("Unexpected recipe type: " + this.recipe);
         }
@@ -79,7 +85,9 @@ public class ExtraRecipeEnabledCondition implements ICondition {
         TRIDENT("trident"),
         CYAN_DYE("cyan_dye"),
         GREEN_DYE("green_dye"),
-        SOUL_TORCH("soul_torch");
+        SOUL_TORCH("soul_torch"),
+        BREAD("bread"),
+        PAPER("paper");
 
         ExtraRecipe(String name) {
             this.name = name;

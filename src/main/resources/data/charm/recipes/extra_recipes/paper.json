@@ -8,5 +8,11 @@
   "result": {
     "item": "minecraft:paper",
     "count": 3
-  }
+  },
+  "conditions": [
+    {
+      "type": "charm:extra_recipe_enabled",
+      "recipe": "paper"
+    }
+  ]
 }
